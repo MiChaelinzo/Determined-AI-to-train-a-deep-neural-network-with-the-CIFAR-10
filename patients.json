@@ -1,0 +1,16 @@
+{
+  "patient_id": 123456,
+  "age": 35,
+  "gender": "male",
+  "diagnosis": "diabetes",
+  "treatment": "insulin",
+  "blood_sugar": 140,
+  "heart_rate": 75,
+  "blood_pressure": {
+      "systolic": 120,
+      "diastolic": 80
+  },
+  "admission_date": "2022-02-28",
+  "discharge_date": "2022-03-05"
+}
+
