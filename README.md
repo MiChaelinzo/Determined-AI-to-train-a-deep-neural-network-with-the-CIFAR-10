@@ -69,6 +69,43 @@ Replace <experiment_id> with the ID of the experiment created in step 3.
 
 - This will show the best validation accuracy achieved during the experiment.
 
+#### To run the application, you can follow the steps below:
+
+1.) Clone the repository:
+
+` git clone https://github.com/MiChaelinzo/Determined-AI-to-train-a-deep-neural-network-on-the-CIFAR-10.git` 
+
+2.) Install the required dependencies. The easiest way to do this is by creating a virtual environment and installing the dependencies using pip. You can create a virtual environment using the following command:
+
+` python3 -m venv env `
+
+Activate the virtual environment:
+
+`source env/bin/activate `
+
+Install the dependencies:
+
+`pip install -r requirements.txt` 
+
+Download the CIFAR-10 dataset:
+
+` python download_dataset.py` 
+
+Run the experiment:
+
+`determined run experiment_config.yaml .` 
+
+This will start the experiment using the configuration specified in experiment_config.yaml.
+
+5.) Once the experiment is finished, you can view the results using the following command:
+
+` determined tensorboard <experiment-id> `
+Replace <experiment-id> with the ID of the experiment, which can be found in the output of the determined run command.
+
+- Note: You will need to have a Determined cluster running to run this application. If you don't have a cluster, you can sign up for a free trial at https://determined.ai/. Once you have a cluster set up, you will need to update the determined.yaml file to point to the address of your cluster.
+
+
+
 
 
 
