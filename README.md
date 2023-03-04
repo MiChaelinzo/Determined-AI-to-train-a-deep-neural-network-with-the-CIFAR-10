@@ -46,10 +46,13 @@ Once you have installed the required software and libraries, follow these steps:
 
 1.) Clone the GitHub repository to your local machine:
 `git clone https://github.com/MiChaelinzo/Determined-AI-to-train-a-deep-neural-network-on-the-CIFAR-10.git`
+
 2.) Navigate to the repository directory:
 `cd Determined-AI-to-train-a-deep-neural-network-on-the-CIFAR-10 `
+
 3.) Create a new Determined experiment using the CLI:
 ` det experiment create . --config=config.yaml` 
+
 4.) Monitor the experiment using the CLI:
 `det experiment describe <experiment_id> `
 Replace <experiment_id> with the ID of the experiment created in step 3.
