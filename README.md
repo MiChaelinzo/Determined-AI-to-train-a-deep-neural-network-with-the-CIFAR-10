@@ -37,6 +37,21 @@ lua
 
 This command will launch a new training job on your machine or cluster using the specified YAML configuration file. You can monitor the progress of your job in real-time using the Determined AI web UI or CLI tool, and view the training metrics and evaluation results once the job is complete.
 
+- This model consists of a series of convolutional layers followed by fully connected layers. The input to the network is a 32x32x3 image, and the output is a vector of length 10, representing the predicted probabilities for each of the 10 classes in the CIFAR-10 dataset.
+
+You can use this model in your own code by importing the CIFAR10Model class and instantiating an instance of the class, as shown below:
+
+python
+```
+from cifar10_model import CIFAR10Model
+
+model = CIFAR10Model()
+```
+Then you can use this model instance to train and test on the CIFAR-10 dataset.
+
+
+
+
 #### To run this application, you will need to have the following software and libraries installed:
 
 Python 3.6 or later
