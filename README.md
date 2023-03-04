@@ -30,6 +30,15 @@ Install the Determined AI platform: Follow the instructions provided in the plat
 
 4.) Launch your training job: Once you have defined your training job, launch it using the Determined AI platform. The platform will distribute the training across the specified nodes and GPUs, allowing you to train your model at scale.
 
+To run this job, save the above YAML file to a location on your machine and run the following command in the terminal:
+
+lua
+` det experiment create /path/to/yaml/file.yaml /path/to/project/directory` 
+
+This command will launch a new training job on your machine or cluster using the specified YAML configuration file. You can monitor the progress of your job in real-time using the Determined AI web UI or CLI tool, and view the training metrics and evaluation results once the job is complete.
+
+
+
 
 
 
