@@ -12,11 +12,11 @@ Json sample represents a hypothetical record in a medical dataset, with informat
 
 In the context of distributed training with the Determined AI platform, the specific architecture used for the CIFAR-10 image classification task may have been optimized for performance and scalability across multiple nodes. The platform may have also used techniques such as data parallelism or model parallelism to distribute the computation across multiple GPUs or nodes.
 
-The first layer in a CNN is typically a convolutional layer, which applies a set of filters to the input image to extract feature maps. The output of the convolutional layer is then passed through a nonlinear activation function such as ReLU, which introduces nonlinearity into the model and helps to create more complex representations of the input data.
+- The first layer in a CNN is typically a convolutional layer, which applies a set of filters to the input image to extract feature maps. The output of the convolutional layer is then passed through a nonlinear activation function such as ReLU, which introduces nonlinearity into the model and helps to create more complex representations of the input data.
 
-The output of the activation function is then typically passed through a pooling layer, which reduces the spatial dimensions of the feature maps while retaining their essential features. This process is repeated multiple times, with the number of filters and the size of the filters gradually increasing to capture more complex features of the input image.
+- The output of the activation function is then typically passed through a pooling layer, which reduces the spatial dimensions of the feature maps while retaining their essential features. This process is repeated multiple times, with the number of filters and the size of the filters gradually increasing to capture more complex features of the input image.
 
-Finally, the output of the last convolutional layer is flattened into a vector and passed through one or more fully connected layers, which use the extracted features to make a prediction about the class of the input image.
+- Finally, the output of the last convolutional layer is flattened into a vector and passed through one or more fully connected layers, which use the extracted features to make a prediction about the class of the input image.
 
 #### Instructions for how to run your training job
 
@@ -36,6 +36,31 @@ lua
 ` det experiment create /path/to/yaml/file.yaml /path/to/project/directory` 
 
 This command will launch a new training job on your machine or cluster using the specified YAML configuration file. You can monitor the progress of your job in real-time using the Determined AI web UI or CLI tool, and view the training metrics and evaluation results once the job is complete.
+
+#### To run this application, you will need to have the following software and libraries installed:
+
+Python 3.6 or later
+Determined AI CLI (version 0.16.1 or later)
+TensorFlow (version 2.0 or later)
+Once you have installed the required software and libraries, follow these steps:
+
+1.) Clone the GitHub repository to your local machine:
+`git clone https://github.com/MiChaelinzo/Determined-AI-to-train-a-deep-neural-network-on-the-CIFAR-10.git`
+2.) Navigate to the repository directory:
+`cd Determined-AI-to-train-a-deep-neural-network-on-the-CIFAR-10 `
+3.) Create a new Determined experiment using the CLI:
+` det experiment create . --config=config.yaml` 
+4.) Monitor the experiment using the CLI:
+`det experiment describe <experiment_id> `
+Replace <experiment_id> with the ID of the experiment created in step 3.
+
+5.) Once the experiment is finished, you can view the results using the CLI:
+`det experiment describe <experiment_id> --json | jq '.best_validation_metrics'`
+Replace <experiment_id> with the ID of the experiment created in step 3.
+
+- This will show the best validation accuracy achieved during the experiment.
+
+
 
 
 
