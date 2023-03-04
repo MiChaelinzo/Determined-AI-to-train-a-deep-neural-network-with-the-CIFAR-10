@@ -1,0 +1,5 @@
+determined 
+torch 
+torchvision 
+numpy
+tensorflow
