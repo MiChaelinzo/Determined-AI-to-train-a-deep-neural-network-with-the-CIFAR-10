@@ -14,3 +14,50 @@
   "discharge_date": "2022-03-05"
 }
 
+{
+  "patient_id": 987654,
+  "age": 42,
+  "gender": "female",
+  "diagnosis": "hypertension",
+  "treatment": "beta blockers",
+  "blood_sugar": 100,
+  "heart_rate": 60,
+  "blood_pressure": {
+      "systolic": 140,
+      "diastolic": 90
+  },
+  "admission_date": "2022-03-01",
+  "discharge_date": "2022-03-07"
+}
+{
+  "patient_id": 246810,
+  "age": 58,
+  "gender": "male",
+  "diagnosis": "coronary artery disease",
+  "treatment": "aspirin",
+  "blood_sugar": 110,
+  "heart_rate": 80,
+  "blood_pressure": {
+      "systolic": 130,
+      "diastolic": 85
+  },
+  "admission_date": "2022-02-25",
+  "discharge_date": "2022-03-03"
+}
+{
+  "patient_id": 135792,
+  "age": 25,
+  "gender": "female",
+  "diagnosis": "asthma",
+  "treatment": "bronchodilators",
+  "blood_sugar": 85,
+  "heart_rate": 95,
+  "blood_pressure": {
+      "systolic": 120,
+      "diastolic": 80
+  },
+  "admission_date": "2022-02-28",
+  "discharge_date": "2022-03-06"
+}
+
+
