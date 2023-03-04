@@ -1,6 +1,38 @@
 # Determined-AI-to-train-a-deep-neural-network-on-the-CIFAR-10
 
+#### The project objective
+
 This code uses the CIFAR-10 dataset, a common benchmark dataset for image classification. The model architecture is a convolutional neural network that consists of two convolutional layers, max-pooling layers, and two fully connected layers. The data loader function preprocesses the data and creates TensorFlow Datasets for training and validation. The training function uses the Determined AI library to distribute the training across multiple GPUs using the TensorFlow backend. The hyperparameters, such as batch size, learning rate, and number of epochs, are defined in the experiment configuration, and the searcher selects the best set of hyperparameters based on the validation accuracy. The resources section specifies the number of slots per trial, which determines the number of GPUs used for each trial. Finally, the experiment is created using the Determined object, which manages the training process and outputs the results.
+
+#### A data sample from your dataset with an explanation
+
+Json sample represents a hypothetical record in a medical dataset, with information about a patient who has been diagnosed with diabetes and is receiving insulin treatment. The record includes demographic information such as the patient's age and gender, as well as clinical information such as blood sugar levels, heart rate, and blood pressure measurements. The patient's admission and discharge dates are also included. This type of data can be used for a variety of medical research and analysis purposes, such as identifying trends in patient outcomes, predicting complications, or evaluating the effectiveness of different treatments. It is important to note that this is a hypothetical example and not based on any real medical data.
+
+#### A description of your model architecture
+
+In the context of distributed training with the Determined AI platform, the specific architecture used for the CIFAR-10 image classification task may have been optimized for performance and scalability across multiple nodes. The platform may have also used techniques such as data parallelism or model parallelism to distribute the computation across multiple GPUs or nodes.
+
+The first layer in a CNN is typically a convolutional layer, which applies a set of filters to the input image to extract feature maps. The output of the convolutional layer is then passed through a nonlinear activation function such as ReLU, which introduces nonlinearity into the model and helps to create more complex representations of the input data.
+
+The output of the activation function is then typically passed through a pooling layer, which reduces the spatial dimensions of the feature maps while retaining their essential features. This process is repeated multiple times, with the number of filters and the size of the filters gradually increasing to capture more complex features of the input image.
+
+Finally, the output of the last convolutional layer is flattened into a vector and passed through one or more fully connected layers, which use the extracted features to make a prediction about the class of the input image.
+
+#### Instructions for how to run your training job
+
+Install the Determined AI platform: Follow the instructions provided in the platform's documentation to install the Determined AI platform on your system.
+
+1.) Prepare the CIFAR-10 dataset: Download the CIFAR-10 dataset and prepare it for training. This may involve preprocessing the images, splitting the dataset into training and validation sets, and converting the data into a format that can be read by the deep learning framework you will be using.
+
+2.) Define your model: Using your preferred deep learning framework (such as TensorFlow or PyTorch), define your neural network architecture for the CIFAR-10 image classification task. This may involve specifying the number and size of convolutional layers, pooling layers, and fully connected layers, as well as the activation functions and loss function.
+
+3.) Define your training job: Using the Determined AI platform, define your training job by specifying the number of nodes, the number of GPUs per node, and other training parameters such as the learning rate and batch size. You can also specify any hyperparameters you want to optimize during training, such as the number of layers or the size of the convolutional filters.
+
+4.) Launch your training job: Once you have defined your training job, launch it using the Determined AI platform. The platform will distribute the training across the specified nodes and GPUs, allowing you to train your model at scale.
+
+
+
+
 
 
 
