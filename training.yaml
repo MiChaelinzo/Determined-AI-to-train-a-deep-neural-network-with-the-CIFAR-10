@@ -1,0 +1,37 @@
+description: Train a deep neural network on CIFAR-10 using Determined AI
+
+resources:
+  slots_per_trial: 2
+  native_parallel: true
+  max_slots: 8
+  container:
+    image: determinedai/environments:cuda-11.0-pytorch-1.9-tf-2.6-gpu-ubuntu-18.04
+
+data:
+  type: cifar10
+  train_path: /path/to/cifar-10/train
+  validation_path: /path/to/cifar-10/validation
+
+hyperparameters:
+  learning_rate: !uniform {low: 0.001, high: 0.1}
+  momentum: !uniform {low: 0.8, high: 0.99}
+  weight_decay: !loguniform {low: 1e-7, high: 1e-3}
+  batch_size: 128
+  num_layers: 3
+  hidden_size: 128
+  dropout: 0.5
+
+searcher:
+  name: adaptive_simple
+  max_trials: 20
+
+scheduler:
+  name: async_hyperband
+  max_steps: 100
+  grace_period: 1
+  reduction_factor: 3
+
+model:
+  name: cifar10_model.py
+  model_type: pytorch
+
