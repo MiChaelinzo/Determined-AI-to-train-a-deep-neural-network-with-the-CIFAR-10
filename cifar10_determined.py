@@ -2,6 +2,7 @@ import tensorflow as tf
 import determined as det
 from determined.experimental import Determined
 from tensorflow.keras import layers
+import determined.experimental as exp
 
 # Define the model architecture
 class MyModel(tf.keras.Model):
@@ -52,9 +53,12 @@ def train(config):
 # Create a Determined experiment
 experiment_config = {
     "hyperparameters": {
-        "batch_size": det.Constant(value=128),
-        "learning_rate": det.Double(value=0.001, min=0.0001, max=0.01, scale="log"),
-        "epochs": det.Constant(value=10)
+        "learning_rate": {
+  "type": "log",
+  "base": 10,
+  "minval": -4,
+  "maxval": -2,
+},
     },
     "searcher": {
         "name": "single",
@@ -66,9 +70,19 @@ experiment_config = {
         "native_parallel": False
     },
     "data": {
-        "train_data": "train_data",
-        "val_data": "val_data"
+        "train_data": {
+            "type": "numpy",
+            "train_images": "/path/to/train/images.npy",
+            "train_labels": "/path/to/train/labels.npy"
+        },
+        "val_data": {
+            "type": "numpy",
+            "val_images": "/path/to/val/images.npy",
+            "val_labels": "/path/to/val/labels.npy"
+        }
     }
 }
 determined = Determined()
 determined.create_experiment(experiment_config, train_fn=train, data_loader=data_loader)
+
+
