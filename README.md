@@ -59,14 +59,13 @@ Then you can use this model instance to train and test on the CIFAR-10 dataset.
 - numpy
 - torch (>=1.5.0)
 - torchvision
-- You can install them using pip: pip3 install -r requirements.txt
+- You can install them using pip: ` pip3 install -r requirements.txt` 
 
 3.) Open a terminal or command prompt and navigate to the root directory of the downloaded repository.
 
 Run the script using the following command:
 
-Copy code
-python3 cifar10_determined.py 
+` python3 cifar10_determined.py `
 
 This command starts a Determined experiment and runs the cifar10_determined.py script using the current directory as the experiment directory.
 
