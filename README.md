@@ -49,7 +49,28 @@ model = CIFAR10Model()
 ```
 Then you can use this model instance to train and test on the CIFAR-10 dataset.
 
+#### To run the cifar10_determined.py script from the GitHub repository MiChaelinzo/Determined-AI-to-train-a-deep-neural-network-with-the-CIFAR-10, you can follow these steps:
 
+1.) Clone or download the repository to your local machine. 
+
+2.) Ensure that you have the required dependencies installed. The script requires the following Python packages:
+
+- determined (>=0.15.2)
+- numpy
+- torch (>=1.5.0)
+- torchvision
+- You can install them using pip: pip3 install -r requirements.txt
+
+3.) Open a terminal or command prompt and navigate to the root directory of the downloaded repository.
+
+Run the script using the following command:
+
+Copy code
+python3 cifar10_determined.py 
+
+This command starts a Determined experiment and runs the cifar10_determined.py script using the current directory as the experiment directory.
+
+Wait for the experiment to complete. The script will train a deep neural network on the CIFAR-10 dataset and print the training and validation accuracy for each epoch. Once the experiment is complete, the final validation accuracy will be displayed. You can also find the experiment logs, checkpoints, and other output in the experiment directory.
 
 
 #### To run this application, you will need to have the following software and libraries installed:
