@@ -166,7 +166,7 @@ Replace <experiment-id> with the ID of the experiment, which can be found in the
 <img width="670" alt="Screenshot 2023-03-13 142304" src="https://user-images.githubusercontent.com/68110223/224992151-550191cc-746e-4117-8355-fa9c067c19a1.png">
 
  - Result of accuracy and loss with cifar10_cnn_keras.py 
- 
+ ```
 Epoch 1/10
 2023-03-14 12:05:13.595124: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8200
 1563/1563 [==============================] - 8s 4ms/step - loss: 1.5339 - accuracy: 0.4412 - val_loss: 1.2666 - val_accuracy: 0.5498
@@ -190,3 +190,4 @@ Epoch 10/10
 1563/1563 [==============================] - 5s 3ms/step - loss: 0.6204 - accuracy: 0.7830 - val_loss: 0.8984 - val_accuracy: 0.6952
 313/313 - 1s - loss: 0.8984 - accuracy: 0.6952 - 563ms/epoch - 2ms/step
 Test accuracy: 0.6952000260353088
+```
