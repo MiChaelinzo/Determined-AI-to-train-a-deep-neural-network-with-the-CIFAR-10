@@ -158,4 +158,4 @@ Epoch 10/10
 
 Test accuracy: 0.6952000260353088
 ```
-![Uploading Screenshot 2023-03-14 154703.png…]()
+<img width="581" alt="Screenshot 2023-03-14 154703" src="https://user-images.githubusercontent.com/68110223/225051119-497fab54-f456-4894-9616-46dffb52579d.png">
