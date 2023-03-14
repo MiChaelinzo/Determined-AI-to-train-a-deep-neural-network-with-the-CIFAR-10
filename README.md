@@ -65,7 +65,7 @@ Then you can use this model instance to train and test on the CIFAR-10 dataset.
 
 Run the script using the following command:
 
-` python3 cifar10_determined.py `
+` python3 cifar10_cnn_keras_tensor.py `
 
 This command starts a Determined experiment and runs the cifar10_determined.py script using the current directory as the experiment directory.
 
