@@ -139,15 +139,29 @@ Replace <experiment-id> with the ID of the experiment, which can be found in the
 
 - Note: You will need to have a Determined cluster running to run this application. If you don't have a cluster, you can sign up for a free trial at https://determined.ai/. Once you have a cluster set up, you will need to update the determined.yaml file to point to the address of your cluster.
 
+Result of Test Accuracy with cifar10_cnn.py (1)
 
+<img width="676" alt="Screenshot 2023-03-13 132551" src="https://user-images.githubusercontent.com/68110223/224991555-f3cef14c-f59b-418b-b045-232bab2376dd.png">
 
+Result of Test Accuracy with cifar10_cnn.py (2)
 
+<img width="655" alt="Screenshot 2023-03-13 132022" src="https://user-images.githubusercontent.com/68110223/224991208-2a5d0a0b-1eb1-4848-8210-3cd1226b259e.png">
 
+  Downloading Cifar 10 datasets
+  
+<img width="515" alt="Screenshot 2023-03-13 133257" src="https://user-images.githubusercontent.com/68110223/224991627-f2b40d90-6784-40d5-b62a-b69f0c91119f.png">
 
+Result of training cifar10_training.py (1)
+  
+<img width="907" alt="Screenshot 2023-03-13 142231" src="https://user-images.githubusercontent.com/68110223/224991973-b0ff9b5d-3577-47de-8062-468eb39ac7e3.png">
 
+Result of training cifar10_training.py (2)
 
+  
+<img width="928" alt="Screenshot 2023-03-13 142517" src="https://user-images.githubusercontent.com/68110223/224992095-a53230ee-33fc-4a02-a708-2b8d5583cd7f.png">
 
+ Result of training and finished training cifar10_training.py (3)
 
-
-
+  
+<img width="670" alt="Screenshot 2023-03-13 142304" src="https://user-images.githubusercontent.com/68110223/224992151-550191cc-746e-4117-8355-fa9c067c19a1.png">
 
