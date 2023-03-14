@@ -154,6 +154,8 @@ Epoch 9/10
 1563/1563 [==============================] - 5s 3ms/step - loss: 0.6594 - accuracy: 0.7664 - val_loss: 0.8856 - val_accuracy: 0.7050
 Epoch 10/10
 1563/1563 [==============================] - 5s 3ms/step - loss: 0.6204 - accuracy: 0.7830 - val_loss: 0.8984 - val_accuracy: 0.6952
-313/313 - 1s - loss: 0.8984 - accuracy: 0.6952 - 563ms/epoch - 2ms/step
+313/313 - 1s - loss: 0.8984 - accuracy: 0.6952 - 563ms/epoch - 2ms/step<img width="581" alt="Screenshot 2023-03-14 154703" src="https://user-images.githubusercontent.com/68110223/225050943-63cbc7a0-bed6-4ebc-aa94-becaa9ca4d08.png">
+
 Test accuracy: 0.6952000260353088
 ```
+![Uploading Screenshot 2023-03-14 154703.png…]()
