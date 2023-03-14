@@ -1,9 +1,9 @@
 import numpy as np
-import keras
+from tensorflow import keras
 from keras.datasets import cifar10
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D
-from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 
 # Load the CIFAR-10 dataset
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
@@ -44,3 +44,22 @@ model.fit(x_train, y_train, batch_size=128, epochs=100, validation_data=(x_test,
 score = model.evaluate(x_test, y_test, batch_size=128)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+
+# Plot accuracy and loss curves
+acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+epochs = range(len(acc))
+plt.figure(figsize=(10, 5))
+plt.subplot(1, 2, 1)
+plt.plot(epochs, acc, 'r', label='Training accuracy')
+plt.plot(epochs, val_acc, 'b', label='Validation accuracy')
+plt.title('Training and validation accuracy')
+plt.legend()
+plt.subplot(1, 2, 2)
+plt.plot(epochs, loss, 'r', label='Training loss')
+plt.plot(epochs, val_loss, 'b', label='Validation loss')
+plt.title('Training and validation loss')
+plt.legend()
+plt.show()
