@@ -165,3 +165,28 @@ Replace <experiment-id> with the ID of the experiment, which can be found in the
   
 <img width="670" alt="Screenshot 2023-03-13 142304" src="https://user-images.githubusercontent.com/68110223/224992151-550191cc-746e-4117-8355-fa9c067c19a1.png">
 
+ - Result of accuracy and loss with cifar10_cnn_keras.py 
+ 
+Epoch 1/10
+2023-03-14 12:05:13.595124: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8200
+1563/1563 [==============================] - 8s 4ms/step - loss: 1.5339 - accuracy: 0.4412 - val_loss: 1.2666 - val_accuracy: 0.5498
+Epoch 2/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 1.1814 - accuracy: 0.5818 - val_loss: 1.1099 - val_accuracy: 0.6002
+Epoch 3/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 1.0317 - accuracy: 0.6362 - val_loss: 1.0588 - val_accuracy: 0.6323
+Epoch 4/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.9303 - accuracy: 0.6751 - val_loss: 0.9707 - val_accuracy: 0.6597
+Epoch 5/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.8563 - accuracy: 0.6997 - val_loss: 0.9099 - val_accuracy: 0.6797
+Epoch 6/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.7942 - accuracy: 0.7202 - val_loss: 0.8971 - val_accuracy: 0.6881
+Epoch 7/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.7456 - accuracy: 0.7397 - val_loss: 0.8549 - val_accuracy: 0.7087
+Epoch 8/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.6991 - accuracy: 0.7547 - val_loss: 0.8789 - val_accuracy: 0.7035
+Epoch 9/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.6594 - accuracy: 0.7664 - val_loss: 0.8856 - val_accuracy: 0.7050
+Epoch 10/10
+1563/1563 [==============================] - 5s 3ms/step - loss: 0.6204 - accuracy: 0.7830 - val_loss: 0.8984 - val_accuracy: 0.6952
+313/313 - 1s - loss: 0.8984 - accuracy: 0.6952 - 563ms/epoch - 2ms/step
+Test accuracy: 0.6952000260353088
