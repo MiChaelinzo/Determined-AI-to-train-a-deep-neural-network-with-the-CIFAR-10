@@ -110,7 +110,7 @@ Replace <experiment_id> with the ID of the experiment created in step 3.
 
 - 100 epoch results from my_cnn_model.py 
 
-<img width="773" alt="Screenshot 2023-03-26 125443" src="https://user-images.githubusercontent.com/68110223/227874451-3f5c86cf-72a1-4c11-9a54-5f0c2f30f6db.png">
+<img width="685" alt="Screenshot 2023-03-25 203038" src="https://user-images.githubusercontent.com/68110223/227876262-275877c6-f7ce-4c10-aa1a-74dd59796387.png">
 
 - Testing out cifar10_model.h5 with tensorflow models (1)
 
