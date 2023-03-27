@@ -104,6 +104,21 @@ Replace <experiment_id> with the ID of the experiment created in step 3.
 
 - This will show the best validation accuracy achieved during the experiment.
 
+- Test data and the test accuracy/loss with cifar10_cnn_keras_tensor.py
+
+<img width="562" alt="Screenshot 2023-03-14 153300" src="https://user-images.githubusercontent.com/68110223/227875797-f162989f-5890-4a77-8d26-03adb14a13d2.png">
+
+- 100 epoch results from my_cnn_model.py 
+
+<img width="773" alt="Screenshot 2023-03-26 125443" src="https://user-images.githubusercontent.com/68110223/227874451-3f5c86cf-72a1-4c11-9a54-5f0c2f30f6db.png">
+
+- Testing out cifar10_model.h5 with tensorflow models (1)
+
+<img width="691" alt="Screenshot 2023-03-25 203054" src="https://user-images.githubusercontent.com/68110223/227875186-17e53033-87d7-42fa-b6ef-236bd55c9c5e.png">
+
+- Testing out cifar10_model.h5 with tensorflow models (2)
+
+<img width="683" alt="Screenshot 2023-03-25 203114" src="https://user-images.githubusercontent.com/68110223/227875264-8de5e1c4-655a-4675-a738-b4d8f9422c3b.png">
 
 - Result of Test Accuracy with cifar10_cnn.py (1)
 
@@ -111,7 +126,7 @@ Replace <experiment_id> with the ID of the experiment created in step 3.
 
 - Result of Test Accuracy with cifar10_cnn.py (2)
 
-<img width="655" alt="Screenshot 2023-03-13 132022" src="https://user-images.githubusercontent.com/68110223/224991208-2a5d0a0b-1eb1-4848-8210-3cd1226b259e.png">
+<img width="653" alt="Screenshot 2023-03-14 151344" src="https://user-images.githubusercontent.com/68110223/227874142-66c22c58-d297-4749-a9a2-4d9a22103436.png">
 
  - Downloading Cifar 10 datasets
   
